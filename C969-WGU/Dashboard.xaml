@@ -1,0 +1,56 @@
+﻿<Window x:Class="C969_Final.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:C969_Final"
+        mc:Ignorable="d"
+        Title="Schedule Assistant - Dashboard" Height="766" Width="1366" Background="Snow" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Border Background="LightGray" Margin="0,0,1110,0">
+            <StackPanel Margin="10,38,10,10">
+                <Label Name="ConsultantIDLabel" Content="Consultant ID: " Height="30" FontSize="14" FontFamily="Arial" Margin="0,10,0,10"/>
+                <Label Name="ConsultantNameLabel" Content="Welcome: " Height="30" FontSize="14" FontFamily="Arial" Margin="0,10,0,80"/>
+                <Button Name="AppointmentViewBtn" Background="#CCFF55" Height="45" Margin="0,10,0,10" FontSize="20" FontWeight="Bold" FontFamily="Arial" Content="Appointment View" Click="AppointmentViewBtn_Click"/>
+                <Button Name="ConsultantViewBtn" Background="#CCFF55" Height="45" Margin="0,10,0,10" FontSize="20" FontWeight="Bold" FontFamily="Arial" Content="Consultant View" Click="ConsultantViewBtn_Click"/>
+                <Button Name="CustomersViewBtn" Background="#CCFF55" Height="45" Margin="0,10,0,10" FontSize="20" FontWeight="Bold" FontFamily="Arial" Content="Customers View" Click="CustomersViewBtn_Click"/>
+                <Button Name="CalendarViewBtn" Background="#CCFF55" Height="45" Margin="0,10,0,10" FontSize="20" FontWeight="Bold" FontFamily="Arial" Content="Calendar View" Click="CalendarViewBtn_Click"/>
+                <Button Name="SignOutBtn" Background="#CCFF55" Height="45" Margin="0,200,0,10" FontSize="20" FontWeight="Bold" FontFamily="Arial" Content="Sign Out" Click="SignOutBtn_Click"/>
+            </StackPanel>
+        </Border>
+
+        <DataGrid Name="CustomersDataTbl" Margin="312,52,310,384">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="#CCFF55"/>
+                    <Setter Property="FontFamily" Value="Arial"/>
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Width" Value="150"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+
+        <StackPanel Margin="1055,52,10,384">
+            <Button Name="AddCustomerBtn" Content="Add Customer" Margin="10,10,10,10" Height="50" FontSize="20" FontWeight="Bold" FontFamily="Arial" Background="#CCFF55" Click="AddCustomerBtn_Click"/>
+            <Button Name="EditCustomerBtn" Content="Edit Customer" Margin="10,10,10,10" Height="50" FontSize="20" FontWeight="Bold" FontFamily="Arial" Background="#CCFF55" Click="EditCustomerBtn_Click"/>
+            <Button Name="DeleteCustomerBtn" Content="Delete Customer" Margin="10,10,10,10" Height="50" FontSize="20" FontWeight="Bold" FontFamily="Arial" Background="#CCFF55" Click="DeleteCustomerBtn_Click"/>
+        </StackPanel>
+
+        <DataGrid Name="AppointmentsDataTbl" Margin="312,404,310,31">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="#CCFF55"/>
+                    <Setter Property="FontFamily" Value="Arial"/>
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Width" Value="150"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+
+        <StackPanel Margin="1055,404,10,31">
+            <Button Name="AddApointmentBtn" Content="Add Appointment" Margin="10,10,10,10" Height="50" FontSize="20" FontWeight="Bold" FontFamily="Arial" Background="#CCFF55" Click="AddApointmentBtn_Click"/>
+            <Button Name="EditApointmentBtn" Content="Edit Appointment" Margin="10,10,10,10" Height="50" FontSize="20" FontWeight="Bold" FontFamily="Arial" Background="#CCFF55" Click="EditApointmentBtn_Click"/>
+            <Button Name="DeleteApointmentBtn" Content="Delete Appointment" Margin="10,10,10,10" Height="50" FontSize="20" FontWeight="Bold" FontFamily="Arial" Background="#CCFF55" Click="DeleteApointmentBtn_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,8 @@
+﻿Schedule Assistant - Login Records
+
+-------------------------------------------
+
+Consultant Logged In
+UserName: test
+Login Time: 4/15/2020 3:01:33 AM UTC
+ 
