@@ -1,6 +1,7 @@
 # C969-WGU-Final
-Performance Assessment for C969 (Software II)
-
+Performance Assessment for C969 (Software II) --
+Built with Visual Studio Community Edition --
+.NET Framework 4.7.2
 
 __You are working for a software company that has been contracted to develop a scheduling desktop user interface application. The contract is with a global consulting organization that conducts business in multiple languages and has main offices in Phoenix, Arizona; New York, New York; and London, England. The consulting organization has provided a MySQL database that your application must pull data from. The database is used for other systems and therefore its structure cannot be modified.__
 
@@ -27,19 +28,19 @@ D.  Provide the ability to view the calendar by month and by week.
 E.  Provide the ability to automatically adjust appointment times based on user time zones and daylight saving time.
 
 F.  Write exception controls to prevent each of the following. You may use the same mechanism of exception control more than once, but you must incorporate at least  two different customized mechanisms of exception control.
-1.>scheduling an appointment outside business hours
-2.>scheduling overlapping appointments
-3.>entering nonexistent or invalid customer data
-4.>entering an incorrect username and password
+* scheduling an appointment outside business hours
+* scheduling overlapping appointments
+* entering nonexistent or invalid customer data
+* entering an incorrect username and password
 
 G.  Write two or more lambda expressions to make your program more efficient, justifying the use of each lambda expression with an in-line comment.
 
 H.  Write code to provide reminders and alerts 15 minutes in advance of an appointment, based on the user’s log-in.
 
 I.    Provide the ability to generate each  of the following reports using the collection classes:
-1.>number of appointment types by month
-2.>the schedule for each  consultant
-3.>one additional report of your choice
+* number of appointment types by month
+* the schedule for each  consultant
+* one additional report of your choice
 
 J.  Provide the ability to track user activity by recording timestamps for user log-ins in a .txt file, using the collection classes. Each new record should be appended to the log file, if the file already exists.
 
